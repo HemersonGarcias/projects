@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+:root {
+    --cinza: rgba(255, 255, 255, 0.151);
+  }
+
+*{
+    margin: 0px;
+    font-size: 1.03em;
+    text-indent: 10px;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: justify;
+}
+
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+header{
+    background-color:var(--cinza);
+    margin: 0px;
+}
+header > img{
+    margin: auto;
+    display: block;
+    padding: 0px;
+}
+
+#sumario{
+    text-align: left;
+    margin: 5px 0px;
+    border-radius: 5px;
+    color: white;
+    max-width: 300px;
+    min-width: 300px;
+    position: absolute;
+    background-color:var(--cinza) ;
+    
+}
+
+#sumario > ul > li:hover{
+    background-color: rgba(255, 255, 255, 0.281);
+    color : red;
+    cursor:crosshair;
+}
+
+a{
+    color: white;
+    font-weight: normal;
+    cursor: crosshair;
+}
+
+/*REMOVENDO O MENU QUANDO A RESOLUÇÃO É MENOR*/
+@media (max-width: 1600px) {
+    #sumario{display: none;}
+}
+/*-------------------------------------------*/
+main{
+    margin: 5px auto;
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main > article > h1 {
+    padding: 10px;
+}
+
+main > article > ul > li {
+    color: black;
+}
+
+#skimage {
+    margin: auto;
+    padding: 30px;
+    margin: auto;
+    display: block;
+    width: auto;
+}
+
+
+#bold{
+    color: black;
+    font-weight: bolder;
+}
+
+
+h1{
+    color: rgb(47, 0, 255);
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.171), white);
+    text-align: left;
+}
+p{
+    color: black;
+    font-size: 1.1em;
+}
+
+div.video{
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer{
+    background-color: var(--cinza);
+    margin: 20px 0px 0px 0px;
+}
+footer > p{
+    text-align: center;
+    line-height: 1.5em;
+    color: white;
+    font-size: 1em;
+    margin: 0;
+}
+
+footer > p > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer > p > a > img {
+    margin-top: 7px;
+    margin-left: 5px;
+}
+

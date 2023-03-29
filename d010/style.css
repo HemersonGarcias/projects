@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'iDroid';
+    src: url(fontes/idroid.otf);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #000;
+}
+header{
+    background-image: linear-gradient(to top, rgb(23, 59, 44), rgb(75, 179, 75));
+    margin: 0px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+header > h1{
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.8em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.507);
+}
+header > h2{
+    color: #FFF;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.2em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.507);
+}
+header > nav > a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    
+}
+header > nav > a:hover{
+    color: #000;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.342);
+    transition-duration: 0.8s;
+    
+}
+
+main{
+    background-color: #FFF;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+main > section > article > h1{
+    font-family: iDroid;
+    font-size: 1.9em;
+    color: rgb(0, 80, 0);
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+
+main > section > article > h2{
+    font-family: iDroid;
+    color: rgb(0,80,0);
+    font-size: 1.25em;
+    background-image: linear-gradient(to right, rgba(75, 179, 75, 0.288), rgb(255, 255, 255));
+}
+
+#destaque{
+    color: rgb(0, 80, 0);
+    font-weight: bold;
+}
+
+#link{
+    background-color: rgba(175, 255, 175, 0.486);
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 80, 0);
+}
+
+#dan{
+    margin: auto;
+    display: block;
+    width: auto;
+}
+#irina{
+    margin: auto;
+    display: block;
+    width: auto;
+}
+div.video{
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(75, 179, 75, 0.288);
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: rgba(75, 179, 75, 0.288);
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 30px;
+}
+aside > h3{
+    background-color: rgb(0, 80, 0);
+    color: #FFF;
+    padding: 9px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px -20px 0px -20px;
+}
+
+ul{
+    columns: 2; 
+    list-style-type: '\2714\00A0\00A0';
+}
+
+footer{
+    background-color: rgb(0, 80, 0);
+    margin: 20px 0px 0px 0px;
+}
+footer > p{
+    text-align: center;
+    line-height: 1.5em;
+    color: white;
+    font-size: 1em;
+    margin: 0;
+}
+
+footer > p > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
