@@ -10,4 +10,4 @@ Criando meus 2 primeiros sites usando HTML E CSS:
 
 PRATICANDO CSS GRID E FLEXBOX:
 
-<a href="https://hemersongarcias.github.io/projects/cssgrid/index.html">ABRIR BIKCRAFT</a>
+<a href="https://hemersongarcias.github.io/projects/cssgrid/web/index.html">ABRIR BIKCRAFT</a>
