@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+body,
+h1,
+h2,
+ul,
+li,
+p,
+dd,
+dt,
+dl {
+  margin: 0px;
+  padding: 0px;
+  text-transform: lowercase;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+}
+li {
+  position: relative;
+  margin: 0px 0px 12px 0px;
+  background-color: #18181b;
+  text-align: left;
+  border-radius: 3px;
+  font-size: 1.3rem;
+}
+
+li:hover {
+  background-color: #26262e;
+  box-shadow: 3px 3px 9px 1px rgba(0, 0, 0, 0.75);
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: aqua;
+  display: block;
+}
+
+.contato-superior {
+  margin-right: -20px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+body {
+  background: #0d0d0e;
+  color: aqua;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 2;
+  padding: 100px;
+}
+
+.titulo {
+  font-size: 2.6rem;
+}
+
+.cabecalho {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 2/4;
+}
+.cabecalho a {
+  align-content: center;
+  grid-column: 3;
+}
+
+.menu {
+  display: inline-block;
+  grid-row: 2;
+  grid-column: 2/4;
+}
+
+.grid-section {
+  grid-row: 2;
+  grid-column: 3;
+  place-content: center;
+}
+
+.grid-section p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.js .grid-section p {
+  display: none;
+}
+
+.js .grid-section .ativo {
+  display: block !important;
+  animation: show 0.5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.titulo {
+  animation: customAni 1s ease 0s 1 normal forwards;
+}
+
+@keyframes customAni {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
