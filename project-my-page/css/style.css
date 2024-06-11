@@ -163,20 +163,55 @@ body {
 }
 
 @media (max-width: 750px) {
-  body{display: inline-block;}
-  .cabecalho{
-    display:flex;
+  body {
+    display: grid;
+    padding: 50px;
+  }
+  .cabecalho {
+    display: flex;
   }
 
-  ul{
-    display: flex;
+  ul {
+    
     margin-bottom: 20px;
     margin-top: 20px;
   }
 
-  li{
-    margin:5px;
+  li {
+    margin: 5px;
   }
 
+  li:hover {
+    box-shadow: none;
+  }
+  .menu {
+    display: block;
+  }
+}
 
+@media (max-width: 600px) {
+  body {
+    display: inline-block;
+    padding: 50px;
+  }
+  .cabecalho {
+    display: flex;
+  }
+
+  ul {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  li {
+    margin: 5px;
+  }
+
+  li:hover {
+    box-shadow: none;
+  }
+  .menu {
+    display: block;
+  }
 }
