@@ -111,16 +111,7 @@ body {
 .insta {
   max-width: 40px;
   display: inline-block;
-  padding: 0px 1px 0px 1px;
-}
-
-.imgs-social {
-  display: none;
-  padding-top: 5px;
-}
-
-.imgs-social .ativo {
-  display: flex;
+  padding: 10px 5px 0px 0px;
 }
 
 .linkimg {
@@ -227,7 +218,7 @@ body {
   }
 
   li {
-    margin: 5px;
+    margin: 5px 0px 5px 0px;
   }
 
   li:hover {
@@ -237,13 +228,5 @@ body {
     display: block;
   }
 
-  .imgs-social {
-    margin: 0px 0px 0px 0px;
-  }
-
-  .lkd,
-  .insta {
-    padding-top: 2px;
-    padding: 5px;
-  }
+  
 }
