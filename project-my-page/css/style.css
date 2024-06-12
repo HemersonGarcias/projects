@@ -59,6 +59,8 @@ body {
   grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: 2;
   padding: 100px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .titulo {
@@ -101,6 +103,31 @@ body {
   animation: show 0.5s forwards;
 }
 
+.titulo {
+  animation: customAni 1s ease 0s 1 normal forwards;
+}
+
+.lkd,
+.insta {
+  max-width: 40px;
+  display: inline-block;
+  padding: 0px 1px 0px 1px;
+}
+
+.imgs-social {
+  display: none;
+  padding-top: 5px;
+}
+
+.imgs-social .ativo {
+  display: flex;
+}
+
+.linkimg {
+  padding: 0;
+  display: inline;
+}
+
 @keyframes show {
   from {
     opacity: 0;
@@ -110,10 +137,6 @@ body {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
-}
-
-.titulo {
-  animation: customAni 1s ease 0s 1 normal forwards;
 }
 
 @keyframes customAni {
@@ -172,7 +195,6 @@ body {
   }
 
   ul {
-    
     margin-bottom: 20px;
     margin-top: 20px;
   }
@@ -213,5 +235,15 @@ body {
   }
   .menu {
     display: block;
+  }
+
+  .imgs-social {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .lkd,
+  .insta {
+    padding-top: 2px;
+    padding: 5px;
   }
 }
