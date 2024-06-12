@@ -38,6 +38,11 @@ li:hover {
   box-shadow: 3px 3px 9px 1px rgba(0, 0, 0, 0.75);
 }
 
+.ativada{
+  background-color: #26262e;
+  box-shadow: 3px 3px 9px 1px rgba(0, 0, 0, 0.75);
+}
+
 a {
   text-decoration: none;
   padding: 10px;
@@ -228,5 +233,9 @@ body {
     display: block;
   }
 
+  .ativada{
+    background-color: #26262e;
+    box-shadow: none;
+  }
   
 }
